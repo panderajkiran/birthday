@@ -1234,9 +1234,7 @@
               🎵
             </div>
             <div class="player-info">
-              <div class="song-title" id="songTitle">
-                Click 🎵 to upload music
-              </div>
+              <div class="song-title" id="songTitle">Mann Ki Lagan</div>
               <div class="player-controls">
                 <button
                   class="control-btn"
@@ -1421,6 +1419,29 @@
 
       let audioPlayer = null;
       let isPlaying = false;
+      const defaultSongSrc = "images/mann_ki_lagan.mpeg";
+      const defaultSongTitle = "Mann Ki Lagan";
+
+      function ensureAudioPlayerSetup() {
+        if (!audioPlayer) {
+          audioPlayer = document.getElementById("audioPlayer");
+        }
+
+        if (!audioPlayer.dataset.listenersBound) {
+          audioPlayer.addEventListener("loadedmetadata", updateDuration);
+          audioPlayer.addEventListener("timeupdate", updateProgress);
+          audioPlayer.addEventListener("ended", onAudioEnded);
+          audioPlayer.dataset.listenersBound = "true";
+        }
+      }
+
+      function loadDefaultSongIfNeeded() {
+        ensureAudioPlayerSetup();
+        if (!audioPlayer.src) {
+          audioPlayer.src = defaultSongSrc;
+          document.getElementById("songTitle").textContent = defaultSongTitle;
+        }
+      }
       const pickedImageUrls = new Map();
 
       function handleCardImagePick(event, imageId) {
@@ -1459,18 +1480,13 @@
       function handleMusicUpload(event) {
         const file = event.target.files[0];
         if (file) {
-          audioPlayer = document.getElementById("audioPlayer");
+          ensureAudioPlayerSetup();
           const url = URL.createObjectURL(file);
           audioPlayer.src = url;
 
           // Update song title with file name (remove extension)
           const fileName = file.name.replace(/\.[^/.]+$/, "");
           document.getElementById("songTitle").textContent = fileName;
-
-          // Set up audio event listeners
-          audioPlayer.addEventListener("loadedmetadata", updateDuration);
-          audioPlayer.addEventListener("timeupdate", updateProgress);
-          audioPlayer.addEventListener("ended", onAudioEnded);
 
           // Auto play after loading
           audioPlayer.play();
@@ -1480,10 +1496,7 @@
       }
 
       function togglePlay() {
-        if (!audioPlayer || !audioPlayer.src) {
-          alert("Please upload a music file first by clicking the 🎵 icon!");
-          return;
-        }
+        loadDefaultSongIfNeeded();
 
         const playBtn = document.getElementById("playPauseBtn");
         if (isPlaying) {
