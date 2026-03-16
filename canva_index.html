@@ -1,0 +1,1725 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Babby</title>
+    <script src="/_sdk/element_sdk.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&amp;family=Dancing+Script:wght@700&amp;family=Montserrat:wght@300;400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      body {
+        position: relative;
+        font-family: "Montserrat", sans-serif;
+        color: #2c2c2c;
+        /* Pastel scrapbook two-page spread: left/right pages, seam, grain, hearts tile, stickers, torn parchment reveal */
+        background-color: #fdeff4;
+        background-image:
+        /* warm vignette */
+          radial-gradient(
+            circle at 50% 45%,
+            rgba(255, 245, 240, 0.35) 0%,
+            rgba(255, 245, 240, 0.08) 46%,
+            rgba(215, 185, 165, 0.12) 90%,
+            rgba(215, 185, 165, 0.18) 100%
+          ),
+          /* page gradient split for left/right soft symmetry */
+          linear-gradient(
+              90deg,
+              #fde7f1 0%,
+              #fbdde9 46%,
+              #f8d6e5 50%,
+              #fbdde9 54%,
+              #fde7f1 100%
+            ),
+          /* subtle vertical seam highlight */
+          linear-gradient(
+              90deg,
+              transparent 49.5%,
+              rgba(255, 255, 255, 0.55) 50%,
+              transparent 50.5%
+            ),
+          /* fine grain texture (tiny png) */
+          url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU2NkYGD4z0AEMMDEgHgBiB9mYGL4D4g/g1EBrH0Q2P/AsgxDPxhBgYEGdA0g7xA9E0g4g8AAD//wMA0Y4aGAAAAABJRU5ErkJggg=="),
+          /* seamless carved-heart tile with wavy cream base */
+          url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 260'><rect width='260' height='260' fill='%23fffaf4'/><g stroke='%23f1e4d9' stroke-width='2' stroke-linecap='round' opacity='0.55' fill='none'><path d='M0 46 Q60 22 130 44 T260 46'/><path d='M0 142 Q70 118 138 140 T260 142'/><path d='M0 226 Q72 206 142 224 T260 226'/></g><g opacity='0.82'><defs><linearGradient id='hgrad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%23fff0f7'/><stop offset='50%' stop-color='%23f7c1d5'/><stop offset='100%' stop-color='%23f19bb8'/></linearGradient></defs><g transform='translate(42 36)'><path d='M48 24 C48 12 58 4 68 4 C82 4 90 18 90 30 C90 46 78 60 60 74 C42 60 30 46 30 30 C30 18 38 4 52 4 C62 4 72 12 72 24' fill='url(%23hgrad)' stroke='%23e292ae' stroke-width='3'/><path d='M60 22 C60 16 66 12 72 12' stroke='%23f5c5d8' stroke-width='2' fill='none'/><path d='M52 32 C52 26 58 22 64 22' stroke='%23f5c5d8' stroke-width='2' fill='none'/></g><g transform='translate(152 82) scale(0.9)'><path d='M48 24 C48 12 58 4 68 4 C82 4 90 18 90 30 C90 46 78 60 60 74 C42 60 30 46 30 30 C30 18 38 4 52 4 C62 4 72 12 72 24' fill='url(%23hgrad)' stroke='%23e292ae' stroke-width='3'/><path d='M60 22 C60 16 66 12 72 12' stroke='%23f5c5d8' stroke-width='2' fill='none'/><path d='M52 32 C52 26 58 22 64 22' stroke='%23f5c5d8' stroke-width='2' fill='none'/></g><g transform='translate(86 166) scale(0.78)'><path d='M48 24 C48 12 58 4 68 4 C82 4 90 18 90 30 C90 46 78 60 60 74 C42 60 30 46 30 30 C30 18 38 4 52 4 C62 4 72 12 72 24' fill='url(%23hgrad)' stroke='%23e292ae' stroke-width='3'/><path d='M60 22 C60 16 66 12 72 12' stroke='%23f5c5d8' stroke-width='2' fill='none'/><path d='M52 32 C52 26 58 22 64 22' stroke='%23f5c5d8' stroke-width='2' fill='none'/></g></g></svg>"),
+          /* cherries sticker top-right */
+          url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><defs><radialGradient id='c1' cx='35%' cy='30%' r='70%'><stop offset='0%' stop-color='%23fff2f6'/><stop offset='65%' stop-color='%23f27a9b'/><stop offset='100%' stop-color='%23e45b7a'/></radialGradient><radialGradient id='c2' cx='40%' cy='40%' r='60%'><stop offset='0%' stop-color='white' stop-opacity='0.8'/><stop offset='100%' stop-color='white' stop-opacity='0'/></radialGradient></defs><g transform='translate(0 6)' opacity='0.9'><path d='M110 50 C120 30 150 25 155 55' stroke='%2397b36d' stroke-width='6' fill='none' stroke-linecap='round'/><path d='M100 55 C90 35 60 30 55 60' stroke='%2397b36d' stroke-width='6' fill='none' stroke-linecap='round'/><circle cx='140' cy='90' r='26' fill='url(%23c1)' /><circle cx='80' cy='95' r='28' fill='url(%23c1)' /><circle cx='148' cy='82' r='8' fill='url(%23c2)' /><circle cx='90' cy='86' r='9' fill='url(%23c2)' /></g></svg>"),
+          url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><defs><radialGradient id='c1' cx='35%' cy='30%' r='70%'><stop offset='0%' stop-color='%23fff2f6'/><stop offset='65%' stop-color='%23f27a9b'/><stop offset='100%' stop-color='%23e45b7a'/></radialGradient><radialGradient id='c2' cx='40%' cy='40%' r='60%'><stop offset='0%' stop-color='white' stop-opacity='0.8'/><stop offset='100%' stop-color='white' stop-opacity='0'/></radialGradient></defs><g transform='translate(0 6)' opacity='0.9'><path d='M110 50 C120 30 150 25 155 55' stroke='%2397b36d' stroke-width='6' fill='none' stroke-linecap='round'/><path d='M100 55 C90 35 60 30 55 60' stroke='%2397b36d' stroke-width='6' fill='none' stroke-linecap='round'/><circle cx='140' cy='90' r='26' fill='url(%23c1)' /><circle cx='80' cy='95' r='28' fill='url(%23c1)' /><circle cx='148' cy='82' r='8' fill='url(%23c2)' /><circle cx='90' cy='86' r='9' fill='url(%23c2)' /></g></svg>"),
+          url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 260'><defs><linearGradient id='petal' x1='0%' y1='0%' x2='0%' y2='100%'><stop offset='0%' stop-color='%23ffd7e8'/><stop offset='100%' stop-color='%23f4a9c6'/></linearGradient><linearGradient id='stem' x1='0%' y1='0%' x2='0%' y2='100%'><stop offset='0%' stop-color='%2395c18a'/><stop offset='100%' stop-color='%2379a56f'/></linearGradient><radialGradient id='car' cx='50%' cy='40%' r='60%'><stop offset='0%' stop-color='%23ffe6f0'/><stop offset='100%' stop-color='%23f6b7cf'/></radialGradient></defs><g opacity='0.92' transform='translate(4 0)'><path d='M70 230 C70 185 82 160 96 130' stroke='url(%23stem)' stroke-width='7' fill='none' stroke-linecap='round'/><path d='M128 230 C128 188 140 162 156 132' stroke='url(%23stem)' stroke-width='7' fill='none' stroke-linecap='round'/><g transform='translate(86 102)'><path d='M0 46 C-12 12 12 -2 26 22 C42 -6 62 12 46 44 Z' fill='url(%23petal)' opacity='0.96'/></g><g transform='translate(144 92)'><path d='M0 52 C-14 14 12 -4 26 20 C40 -6 66 12 50 46 Z' fill='url(%23petal)' opacity='0.96'/></g><g transform='translate(52 150)'><circle cx='0' cy='0' r='16' fill='url(%23car)'/><circle cx='16' cy='6' r='12' fill='url(%23car)' opacity='0.9'/><circle cx='-12' cy='10' r='10' fill='url(%23car)' opacity='0.8'/></g></g></svg>"),
+          /* carnations cluster (right) */
+          url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 260'><defs><linearGradient id='petal2' x1='0%' y1='0%' x2='0%' y2='100%'><stop offset='0%' stop-color='%23ffd7e8'/><stop offset='100%' stop-color='%23f4a9c6'/></linearGradient><linearGradient id='stem2' x1='0%' y1='0%' x2='0%' y2='100%'><stop offset='0%' stop-color='%2395c18a'/><stop offset='100%' stop-color='%2379a56f'/></linearGradient><radialGradient id='car2' cx='50%' cy='40%' r='60%'><stop offset='0%' stop-color='%23ffe6f0'/><stop offset='100%' stop-color='%23f6b7cf'/></radialGradient></defs><g opacity='0.9' transform='translate(6 0)'><path d='M90 228 C90 188 104 166 118 140' stroke='url(%23stem2)' stroke-width='7' fill='none' stroke-linecap='round'/><path d='M142 228 C142 190 154 168 170 138' stroke='url(%23stem2)' stroke-width='7' fill='none' stroke-linecap='round'/><path d='M186 228 C186 196 180 170 168 142' stroke='url(%23stem2)' stroke-width='7' fill='none' stroke-linecap='round'/><g transform='translate(112 108)'><circle cx='0' cy='0' r='16' fill='url(%23car2)'/><circle cx='18' cy='6' r='12' fill='url(%23car2)' opacity='0.9'/><circle cx='-14' cy='10' r='10' fill='url(%23car2)' opacity='0.8'/></g><g transform='translate(158 96)'><path d='M0 46 C-12 12 12 -2 26 22 C40 -6 62 12 46 44 Z' fill='url(%23petal2)' opacity='0.96'/></g><g transform='translate(194 124)'><path d='M0 42 C-10 12 10 0 22 18 C34 0 54 12 44 40 Z' fill='url(%23petal2)' opacity='0.94'/></g></g></svg>"),
+          /* translucent ribbon bow centered near top seam */
+          url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 140'><defs><linearGradient id='bow' x1='0%' y1='0%' x2='100%' y2='0%'><stop offset='0%' stop-color='%23ffd9ec'/><stop offset='100%' stop-color='%23f6b9d6'/></linearGradient><radialGradient id='center' cx='50%' cy='50%' r='60%'><stop offset='0%' stop-color='%23ffeefa'/><stop offset='100%' stop-color='%23f3a9c6'/></radialGradient></defs><g opacity='0.82'><path d='M30 90 C70 50 110 60 110 78 C110 60 150 50 190 90 L190 108 C150 78 110 82 110 98 C110 82 70 78 30 108 Z' fill='url(%23bow)' fill-opacity='0.7' stroke='%23f6b9d6' stroke-width='3' stroke-linejoin='round'/><circle cx='110' cy='90' r='18' fill='url(%23center)' stroke='%23f6b9d6' stroke-width='3'/></g></svg>");
+        background-repeat:
+          no-repeat, no-repeat, no-repeat, repeat, repeat, no-repeat, no-repeat,
+          no-repeat, no-repeat;
+        background-size:
+          cover,
+          cover,
+          100% 100%,
+          120px 120px,
+          260px 260px,
+          200px 200px,
+          320px 320px,
+          320px 320px,
+          180px 140px;
+        background-position:
+          center center,
+          center center,
+          center center,
+          0 0,
+          0 0,
+          top 30px right 38px,
+          bottom 38px left 32px,
+          bottom 42px right 28px,
+          50% 32px;
+        background-blend-mode:
+          soft-light, normal, screen, normal, soft-light, normal, normal,
+          normal, normal;
+        overflow-x: hidden;
+      }
+
+      /* Floating hearts animation */
+      #floatingHearts {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        overflow: hidden;
+        z-index: 2;
+      }
+      .heart {
+        position: absolute;
+        bottom: -40px;
+        width: 18px;
+        height: 18px;
+        background: radial-gradient(
+          circle at 30% 30%,
+          #fff 0%,
+          #fff 30%,
+          #f7a5c3 60%,
+          #f06c9b 100%
+        );
+        transform: rotate(45deg);
+        animation: floatHeart linear forwards;
+        opacity: 0.9;
+        filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.15));
+      }
+      .heart::before,
+      .heart::after {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        background: inherit;
+        border-radius: 50%;
+      }
+      .heart::before {
+        top: -9px;
+        left: 0;
+      }
+      .heart::after {
+        left: -9px;
+        top: 0;
+      }
+      @keyframes floatHeart {
+        0% {
+          transform: translateY(0) rotate(45deg) scale(var(--scale, 1));
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.9;
+        }
+        100% {
+          transform: translateY(-110vh) rotate(45deg)
+            translateX(var(--drift, 0px)) scale(var(--scale, 1));
+          opacity: 0;
+        }
+      }
+
+      .main-wrapper {
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        /* transparent to reveal scrapbook spread behind content */
+        background: transparent;
+        position: relative;
+        z-index: 1;
+      }
+
+      /* Torn parchment glow along edges and seam */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background:
+          radial-gradient(
+            circle at 12% 14%,
+            rgba(158, 122, 92, 0.2) 0%,
+            rgba(158, 122, 92, 0) 32%
+          ),
+          radial-gradient(
+            circle at 88% 12%,
+            rgba(158, 122, 92, 0.18) 0%,
+            rgba(158, 122, 92, 0) 34%
+          ),
+          radial-gradient(
+            circle at 14% 86%,
+            rgba(158, 122, 92, 0.16) 0%,
+            rgba(158, 122, 92, 0) 36%
+          ),
+          radial-gradient(
+            circle at 88% 86%,
+            rgba(158, 122, 92, 0.16) 0%,
+            rgba(158, 122, 92, 0) 38%
+          ),
+          linear-gradient(
+            90deg,
+            rgba(116, 82, 54, 0.08) 49.5%,
+            rgba(255, 255, 255, 0) 50.5%
+          );
+        mix-blend-mode: multiply;
+        opacity: 0.9;
+        z-index: 0;
+      }
+
+      /* Blurred Background Effect */
+      .background-blur {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:
+          radial-gradient(
+            circle at 30% 40%,
+            rgba(255, 200, 150, 0.3) 0%,
+            transparent 10%
+          ),
+          radial-gradient(
+            circle at 70% 60%,
+            rgba(255, 220, 180, 0.3) 0%,
+            transparent 10%
+          ),
+          radial-gradient(
+            circle at 50% 80%,
+            rgba(240, 200, 160, 0.2) 0%,
+            transparent 10%
+          );
+        filter: blur(60px);
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      /* Hero Section */
+      .hero-section {
+        position: relative;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 2rem;
+        z-index: 1;
+      }
+
+      /* Happy Birthday Text */
+      .birthday-greeting {
+        font-family: "Playfair Display", serif;
+        font-size: 5rem;
+        font-weight: 900;
+        color: #c41e3a;
+        letter-spacing: 0.05em;
+        text-align: center;
+        margin-bottom: 1rem;
+        line-height: 1.1;
+        text-transform: uppercase;
+      }
+
+      /* Handwritten Script Overlay */
+      .handwritten-overlay {
+        font-family: "Dancing Script", cursive;
+        font-size: 3rem;
+        color: #1a1a1a;
+        text-align: center;
+        margin-bottom: 3rem;
+        position: relative;
+        z-index: 2;
+      }
+
+      /* Photo Collage Layout */
+      .photo-collage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        max-width: 600px;
+        width: 100%;
+        margin-bottom: 3rem;
+      }
+
+      .top-photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        width: 100%;
+      }
+
+      .photo-square {
+        aspect-ratio: 1;
+        background: linear-gradient(135deg, #e8d5c4 0%, #d4c4b0 100%);
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .photo-square::before {
+        content: "💋 ❤️ 💋 ❤️";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        font-size: 1.2rem;
+        opacity: 0.15;
+        z-index: 1;
+        pointer-events: none;
+        letter-spacing: 0.5rem;
+      }
+
+      .photo-square:hover {
+        transform: translateY(-5px);
+      }
+
+      .photo-placeholder {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        background: linear-gradient(135deg, #f5e6d3 0%, #e8d5c4 100%);
+        position: relative;
+      }
+
+      .photo-placeholder img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .upload-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 0.75rem;
+        text-align: center;
+        font-size: 0.85rem;
+        opacity: 0;
+        transition: opacity 0.3s;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .photo-square:hover .upload-overlay {
+        opacity: 1;
+      }
+
+      .upload-input {
+        display: none;
+      }
+
+      /* Large Portrait Photo */
+      .portrait-photo {
+        width: 70%;
+        aspect-ratio: 3/4;
+        background: linear-gradient(135deg, #e8d5c4 0%, #d4c4b0 100%);
+        border: 8px solid white;
+        border-radius: 12px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .portrait-photo::before {
+        content: "💋";
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2rem;
+        opacity: 0.2;
+        z-index: 1;
+        pointer-events: none;
+        transform: rotate(-15deg);
+      }
+
+      .portrait-photo::after {
+        content: "❤️";
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        font-size: 2.5rem;
+        opacity: 0.15;
+        z-index: 1;
+        pointer-events: none;
+        transform: rotate(20deg);
+      }
+
+      .portrait-photo:hover {
+        transform: translateY(-8px);
+      }
+
+      /* Scrapbook Section */
+      .scrapbook-section {
+        position: relative;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem 2rem;
+        background: #e8e5e0;
+        z-index: 1;
+      }
+
+      .scrapbook-container {
+        max-width: 900px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+      }
+
+      /* Top Row Layout */
+      .scrapbook-top-row {
+        display: grid;
+        grid-template-columns: 200px 1fr 250px;
+        gap: 2rem;
+        align-items: start;
+      }
+
+      /* Mini Calendar */
+      .mini-calendar {
+        background: white;
+        border-radius: 10px;
+        padding: 1rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .calendar-header {
+        font-family: "Playfair Display", serif;
+        font-size: 0.95rem;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 0.75rem;
+        color: #5a5a5a;
+      }
+
+      .calendar-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 0.3rem;
+      }
+
+      .calendar-day-label {
+        font-size: 0.7rem;
+        text-align: center;
+        color: #999;
+        font-weight: 600;
+        padding: 0.2rem;
+      }
+
+      .calendar-day {
+        font-size: 0.75rem;
+        text-align: center;
+        padding: 0.3rem;
+        color: #666;
+      }
+
+      .calendar-day.highlighted {
+        background: #c41e3a;
+        color: white;
+        border-radius: 50%;
+        font-weight: 600;
+      }
+
+      /* Vintage Title */
+      .scrapbook-heading {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .vintage-title {
+        font-family: "Playfair Display", serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #3a3a3a;
+        margin-bottom: 0.5rem;
+      }
+
+      .doodle-hearts {
+        display: flex;
+        gap: 0.5rem;
+        font-size: 1.2rem;
+        color: #c41e3a;
+      }
+
+      /* Quote Box */
+      .quote-box {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+
+      .quote-text {
+        font-family: "Playfair Display", serif;
+        font-size: 0.95rem;
+        font-style: italic;
+        color: #5a5a5a;
+        line-height: 1.6;
+      }
+
+      /* Scalloped Frame */
+      .scalloped-frame {
+        background: white;
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+        position: relative;
+      }
+
+      .scalloped-frame::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 0;
+        right: 0;
+        height: 20px;
+        background: radial-gradient(
+          circle at 10px 0,
+          transparent 10px,
+          white 10px
+        );
+        background-size: 20px 20px;
+        background-repeat: repeat-x;
+      }
+
+      .frame-photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+      }
+
+      .frame-photo-item {
+        aspect-ratio: 1;
+        background: #f5f5f5;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .frame-photo-item::before {
+        content: "❤️";
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 1.5rem;
+        opacity: 0.12;
+        z-index: 1;
+        pointer-events: none;
+      }
+
+      .frame-photo-item:nth-child(2)::before {
+        content: "💋";
+        bottom: 10px;
+        left: 10px;
+        top: auto;
+        right: auto;
+      }
+
+      .frame-photo-item:hover {
+        transform: scale(1.02);
+      }
+
+      /* Music Player */
+      .music-player {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+      .player-icon {
+        font-size: 2.5rem;
+      }
+
+      .player-info {
+        flex: 1;
+      }
+
+      .song-title {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #3a3a3a;
+        margin-bottom: 0.5rem;
+      }
+
+      .player-controls {
+        display: flex;
+        gap: 0.75rem;
+        align-items: center;
+      }
+
+      .control-btn {
+        background: none;
+        border: none;
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: #666;
+        transition: color 0.3s;
+        padding: 0.25rem;
+      }
+
+      .control-btn:hover {
+        color: #c41e3a;
+      }
+
+      .play-btn {
+        font-size: 1.5rem;
+      }
+
+      .player-progress {
+        flex: 1;
+      }
+
+      .progress-bar {
+        width: 100%;
+        height: 4px;
+        background: #e0e0e0;
+        border-radius: 2px;
+        overflow: hidden;
+        margin-bottom: 0.25rem;
+      }
+
+      .progress-fill {
+        width: 35%;
+        height: 100%;
+        background: #c41e3a;
+        transition: width 0.3s;
+      }
+
+      .time-stamps {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.7rem;
+        color: #999;
+      }
+
+      /* Heartfelt Note */
+      .heartfelt-note {
+        background: white;
+        padding: 2.5rem;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+      }
+
+      .note-header {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .note-icon {
+        font-size: 1.8rem;
+      }
+
+      .note-title {
+        font-family: "Playfair Display", serif;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #3a3a3a;
+      }
+
+      .note-content {
+        margin-bottom: 1.5rem;
+      }
+
+      .note-text {
+        font-family: "Playfair Display", serif;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #5a5a5a;
+      }
+
+      .note-signature {
+        font-family: "Dancing Script", cursive;
+        font-size: 1.5rem;
+        color: #3a3a3a;
+        text-align: right;
+      }
+
+      /* Message Section */
+      .message-section {
+        position: relative;
+        min-height: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem 2rem;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(10px);
+        z-index: 1;
+      }
+
+      .message-container {
+        max-width: 700px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .message-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        padding: 2.5rem;
+        border-radius: 15px;
+        margin-bottom: 2rem;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .message-text {
+        font-size: 1.3rem;
+        line-height: 1.8;
+        color: #3a3a3a;
+        font-weight: 300;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      /* Footer */
+      .footer-section {
+        position: relative;
+        padding: 2rem;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.3);
+        z-index: 1;
+      }
+
+      .footer-text {
+        font-size: 1.1rem;
+        color: #5a5a5a;
+        font-weight: 400;
+        font-style: italic;
+      }
+
+      /* Minimal Aesthetic Portrait Section */
+      .minimal-portrait-section {
+        position: relative;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem 2rem;
+        background: linear-gradient(
+          135deg,
+          #f5e6d3 0%,
+          #e8d5c4 50%,
+          #d4c4b0 100%
+        );
+        z-index: 1;
+      }
+
+      .portrait-container {
+        max-width: 1100px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+      }
+
+      /* Portrait Image Area */
+      .portrait-image-area {
+        position: relative;
+        aspect-ratio: 3/4;
+        cursor: pointer;
+        transition: transform 0.4s ease;
+      }
+
+      .portrait-image-area:hover {
+        transform: translateY(-8px);
+      }
+
+      .glow-outline {
+        position: absolute;
+        inset: -15px;
+        background: radial-gradient(
+          circle at center,
+          rgba(196, 30, 58, 0.15),
+          transparent 70%
+        );
+        filter: blur(25px);
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      .portrait-placeholder-area {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: white;
+        border: 6px solid white;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        overflow: hidden;
+        z-index: 1;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+      }
+
+      .portrait-placeholder-area::before {
+        content: "💋";
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 3rem;
+        opacity: 0.1;
+        z-index: 0;
+        pointer-events: none;
+        transform: rotate(-25deg);
+      }
+
+      .portrait-placeholder-area::after {
+        content: "❤️";
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        font-size: 3.5rem;
+        opacity: 0.08;
+        z-index: 0;
+        pointer-events: none;
+        transform: rotate(15deg);
+      }
+
+      .portrait-placeholder-area img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .portrait-emoji {
+        font-size: 4rem;
+        z-index: 2;
+      }
+
+      .upload-text {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        color: #999;
+        z-index: 2;
+      }
+
+      /* Elegant Text Area */
+      .elegant-text-area {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .minimal-heading {
+        font-family: "Playfair Display", serif;
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: #c41e3a;
+        line-height: 1.1;
+        margin: 0;
+      }
+
+      .minimal-subtext {
+        font-family: "Dancing Script", cursive;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #3a3a3a;
+        font-style: italic;
+      }
+
+      .minimal-message {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: #5a5a5a;
+        line-height: 1.8;
+        padding-top: 1.5rem;
+        border-top: 2px solid rgba(196, 30, 58, 0.2);
+      }
+
+      /* Footer Section */
+      .final-footer {
+        position: relative;
+        padding: 3rem 2rem;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.5);
+        z-index: 1;
+      }
+
+      .final-footer-text {
+        font-family: "Dancing Script", cursive;
+        font-size: 1.8rem;
+        color: #3a3a3a;
+        margin-bottom: 0.5rem;
+      }
+
+      .final-footer-subtext {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        color: #666;
+        font-weight: 300;
+      }
+
+      /* Floating Elements */
+      .floating-hearts {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 2;
+        overflow: hidden;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .birthday-greeting {
+          font-size: 3rem;
+        }
+
+        .handwritten-overlay {
+          font-size: 2rem;
+        }
+
+        .photo-collage {
+          max-width: 90%;
+        }
+
+        .top-photos {
+          gap: 1rem;
+        }
+
+        .portrait-photo {
+          width: 85%;
+        }
+
+        .message-text {
+          font-size: 1.1rem;
+        }
+
+        .message-card {
+          padding: 2rem;
+        }
+
+        .scrapbook-top-row {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+
+        .mini-calendar {
+          max-width: 250px;
+          margin: 0 auto;
+        }
+
+        .vintage-title {
+          font-size: 2rem;
+        }
+
+        .music-player {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .player-controls {
+          justify-content: center;
+        }
+
+        .heartfelt-note {
+          padding: 1.5rem;
+        }
+
+        .note-title {
+          font-size: 1.5rem;
+        }
+
+        .note-text {
+          font-size: 1rem;
+        }
+
+        .portrait-container {
+          grid-template-columns: 1fr;
+          gap: 3rem;
+        }
+
+        .minimal-heading {
+          font-size: 2.5rem;
+        }
+
+        .minimal-subtext {
+          font-size: 1.4rem;
+        }
+
+        .minimal-message {
+          font-size: 1rem;
+        }
+
+        .final-footer-text {
+          font-size: 1.5rem;
+        }
+
+        .final-footer-subtext {
+          font-size: 0.9rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .birthday-greeting {
+          font-size: 2.5rem;
+        }
+
+        .handwritten-overlay {
+          font-size: 1.6rem;
+        }
+
+        .portrait-photo {
+          width: 95%;
+        }
+      }
+    </style>
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+    </style>
+    <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+    <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+    <div class="main-wrapper">
+      <!-- Background Blur Effect -->
+      <div class="background-blur"></div>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <h1 class="birthday-greeting" id="greetingText">
+          HAPPY BIRTHDAY BABBY
+        </h1>
+        <p class="handwritten-overlay" id="handwrittenMessage">
+          Wishing you the bubuest day ever!
+        </p>
+        <!-- Photo Collage -->
+        <div class="photo-collage">
+          <!-- Top Two Square Photos -->
+          <div class="top-photos">
+            <div
+              class="photo-square"
+              onclick="document.getElementById('cardUpload1').click()"
+            >
+              <div class="photo-placeholder">
+                <img id="cardPhoto1" src="images/first.jpeg" alt="Photo 1" />
+              </div>
+              <input
+                type="file"
+                id="cardUpload1"
+                class="upload-input"
+                accept="image/*"
+                onchange="handleCardImagePick(event, 'cardPhoto1')"
+              />
+            </div>
+            <div
+              class="photo-square"
+              onclick="document.getElementById('cardUpload2').click()"
+            >
+              <div class="photo-placeholder">
+                <img id="cardPhoto2" src="images/cheeze.jpeg" alt="Photo 2" />
+              </div>
+              <input
+                type="file"
+                id="cardUpload2"
+                class="upload-input"
+                accept="image/*"
+                onchange="handleCardImagePick(event, 'cardPhoto2')"
+              />
+            </div>
+          </div>
+          <!-- Large Portrait Photo -->
+          <div
+            class="portrait-photo"
+            onclick="document.getElementById('cardUpload3').click()"
+          >
+            <div class="photo-placeholder">
+              <img
+                id="cardPhoto3"
+                src="images/sleeping_beauty.jpeg"
+                alt="Photo 3"
+              />
+            </div>
+            <input
+              type="file"
+              id="cardUpload3"
+              class="upload-input"
+              accept="image/*"
+              onchange="handleCardImagePick(event, 'cardPhoto3')"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Scrapbook Section -->
+      <section class="scrapbook-section">
+        <div class="scrapbook-container">
+          <!-- Top Row: Calendar and Quote -->
+          <div class="scrapbook-top-row">
+            <!-- Mini Calendar -->
+            <div class="mini-calendar">
+              <div class="calendar-header" id="calendarMonth">March 2000</div>
+              <div class="calendar-grid">
+                <div class="calendar-day-label">S</div>
+                <div class="calendar-day-label">M</div>
+                <div class="calendar-day-label">T</div>
+                <div class="calendar-day-label">W</div>
+                <div class="calendar-day-label">T</div>
+                <div class="calendar-day-label">F</div>
+                <div class="calendar-day-label">S</div>
+                <div class="calendar-day">1</div>
+                <div class="calendar-day">2</div>
+                <div class="calendar-day">3</div>
+                <div class="calendar-day">4</div>
+                <div class="calendar-day">5</div>
+                <div class="calendar-day">6</div>
+                <div class="calendar-day">7</div>
+                <div class="calendar-day">8</div>
+                <div class="calendar-day">9</div>
+                <div class="calendar-day">10</div>
+                <div class="calendar-day">11</div>
+                <div class="calendar-day">12</div>
+                <div class="calendar-day">13</div>
+                <div class="calendar-day">14</div>
+                <div class="calendar-day">15</div>
+                <div class="calendar-day">16</div>
+                <div class="calendar-day highlighted">17</div>
+                <div class="calendar-day">18</div>
+                <div class="calendar-day">19</div>
+                <div class="calendar-day">20</div>
+                <div class="calendar-day">21</div>
+                <div class="calendar-day">22</div>
+                <div class="calendar-day">23</div>
+                <div class="calendar-day">24</div>
+                <div class="calendar-day">25</div>
+                <div class="calendar-day">26</div>
+                <div class="calendar-day">27</div>
+                <div class="calendar-day">28</div>
+                <div class="calendar-day">29</div>
+                <div class="calendar-day">30</div>
+                <div class="calendar-day">31</div>
+              </div>
+            </div>
+            <!-- Vintage Heading -->
+            <div class="scrapbook-heading">
+              <h2 class="vintage-title" id="scrapbookTitle">
+                Cherished Moments
+              </h2>
+              <div class="doodle-hearts">
+                <span>♡</span> <span>♡</span> <span>♡</span>
+              </div>
+            </div>
+            <!-- Romantic Quote -->
+            <div class="quote-box">
+              <p class="quote-text" id="romanticQuote">
+                "A day that became memorable for me just becoz of u Suar. Bhale
+                he bday tera hai lekin mai jyada khush ho rahi hu😭. Khushi ke
+                aansu hai pagle.Socha jyada nhi kahungi but its ur bday and its
+                must be special toh ek shaiyri yaad agayi😗.Days are many but
+                SUNDAY is special, Flowers are many but ROSE is special, Months
+                are many but yr bday month is special and in the same way boys
+                are many but my MAN is special😗😎. I know aasman me hoga😂"
+              </p>
+            </div>
+          </div>
+          <!-- Scalloped Photo Frame -->
+          <div class="scalloped-frame">
+            <div class="frame-photos">
+              <div
+                class="frame-photo-item"
+                onclick="document.getElementById('cardUpload4').click()"
+              >
+                <div class="photo-placeholder">
+                  <img
+                    id="cardPhoto4"
+                    src="images/rishikesh.jpeg"
+                    alt="Photo 4"
+                  />
+                </div>
+                <input
+                  type="file"
+                  id="cardUpload4"
+                  class="upload-input"
+                  accept="image/*"
+                  onchange="handleCardImagePick(event, 'cardPhoto4')"
+                />
+              </div>
+              <div
+                class="frame-photo-item"
+                onclick="document.getElementById('cardUpload5').click()"
+              >
+                <div class="photo-placeholder">
+                  <img id="cardPhoto5" src="images/smile.jpeg" alt="Photo 5" />
+                </div>
+                <input
+                  type="file"
+                  id="cardUpload5"
+                  class="upload-input"
+                  accept="image/*"
+                  onchange="handleCardImagePick(event, 'cardPhoto5')"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- Music Player -->
+          <div class="music-player">
+            <div
+              class="player-icon"
+              onclick="document.getElementById('uploadMusic').click()"
+              style="cursor: pointer"
+              title="Click to upload music"
+            >
+              🎵
+            </div>
+            <div class="player-info">
+              <div class="song-title" id="songTitle">
+                Click 🎵 to upload music
+              </div>
+              <div class="player-controls">
+                <button
+                  class="control-btn"
+                  onclick="skipBackward()"
+                  title="Skip backward 10s"
+                >
+                  ⏮
+                </button>
+                <button
+                  class="control-btn play-btn"
+                  id="playPauseBtn"
+                  onclick="togglePlay()"
+                >
+                  ▶
+                </button>
+                <button
+                  class="control-btn"
+                  onclick="skipForward()"
+                  title="Skip forward 10s"
+                >
+                  ⏭
+                </button>
+              </div>
+            </div>
+            <div class="player-progress">
+              <div
+                class="progress-bar"
+                id="progressBar"
+                onclick="seekAudio(event)"
+                style="cursor: pointer"
+              >
+                <div class="progress-fill" id="progressFill"></div>
+              </div>
+              <div class="time-stamps">
+                <span id="currentTime">0:00</span>
+                <span id="duration">0:00</span>
+              </div>
+            </div>
+            <input
+              type="file"
+              id="uploadMusic"
+              class="upload-input"
+              accept="audio/*"
+              onchange="handleMusicUpload(event)"
+            />
+            <audio id="audioPlayer" style="display: none"></audio>
+          </div>
+          <!-- Heartfelt Note Section -->
+          <div class="heartfelt-note">
+            <div class="note-header">
+              <span class="note-icon">✉️</span>
+              <h3 class="note-title">A Letter to You</h3>
+            </div>
+            <div class="note-content">
+              <p class="note-text" id="heartfeltNote">
+                Dear friend, on this special day, I want you to know how much
+                you mean to me. The memories we've created together are
+                treasures I hold close to my heart. Your laughter brightens my
+                darkest days, and your presence makes every moment more
+                meaningful. Thank you for being the incredible person you are.
+                Here's to another year of adventures, joy, and unforgettable
+                moments together. Happy Birthday Babby!
+              </p>
+            </div>
+            <div class="note-signature" id="noteSignature">
+              With all my love ♡
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Minimal Aesthetic Portrait Section -->
+      <section class="minimal-portrait-section">
+        <div class="portrait-container">
+          <!-- Left Side: Portrait Image Area -->
+          <div
+            class="portrait-image-area"
+            onclick="document.getElementById('cardUploadPortrait').click()"
+          >
+            <div class="glow-outline"></div>
+            <div class="portrait-placeholder-area">
+              <img id="cardPortrait" src="images/vedansh.jpeg" alt="Portrait" />
+            </div>
+            <input
+              type="file"
+              id="cardUploadPortrait"
+              class="upload-input"
+              accept="image/*"
+              onchange="handleCardImagePick(event, 'cardPortrait')"
+            />
+          </div>
+          <!-- Right Side: Elegant Text -->
+          <div class="elegant-text-area">
+            <h2 class="minimal-heading" id="minimalHeading">
+              Beautiful Moments
+            </h2>
+            <p class="minimal-subtext" id="minimalSubtext">
+              Captured in time, cherished forever
+            </p>
+            <div class="minimal-message" id="minimalMessage">
+              Tere saath bitaya hua har pal kabhi regretful nhi raha babby, meri
+              har khushi tujhe he pehle sunai hai, bhale he dukh jyada nhi
+              baate. teri jaisi he hu . pagalo ki tarah ye soch leti hu ki tu
+              udas hojayega toh nhi bata paati hu. Baaki i truely cared for u.
+              Ab aur kuch nhi kaha jaata yr. I'm really sorry for making your
+              day bad. shd mai sachme bohot uri hu yr. I hope you can forgive me
+              and we can move forward with happy memories. Happy Birthday Babby!
+              I wish you all the happiness in the world. love you so much and i
+              hope you have the best birthday ever! 💖",
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Final Footer -->
+      <footer class="final-footer">
+        <p class="final-footer-text" id="messageLine1">
+          Share a heartfelt message about this special person...
+        </p>
+        <p class="final-footer-subtext" id="footerText">
+          With L and L. Baaki tu khud samajh ja 😗Smart hai
+        </p>
+      </footer>
+    </div>
+    <script>
+      const defaultConfig = {
+        recipient_name: "Friend",
+        greeting_text: "HAPPY BIRTHDAY BABBY",
+        handwritten_message: "Wishing you the bubuest day ever 😗!",
+        scrapbook_title: "Cherished Moments",
+        romantic_quote:
+          '"A day that became memorable for me just becoz of u Suar. Bhale he bday tera hai lekin mai jyada khush ho rahi hu😭. Khushi ke aansu hai pagle.Socha jyada nhi kahungi but its ur bday and its must be special toh ek shaiyri yaad agayi😗.Days are many but SUNDAY is special, Flowers are many but ROSE is special, Months are many but yr bday month is special and in the same way boys are many but my MAN is special😗😎. I know aasman me hoga😂"',
+        heartfelt_note:
+          "Dear Babby, on this special day, I want you to know how much you mean to me. The memories we've created together are treasures I hold close to my heart. Your laughter brightens my darkest days, and your presence makes every moment more meaningful. Thank you for being the incredible person you are. Here's to another year of adventures, joy, and unforgettable moments together. Happy Birthday DA!",
+        note_signature: "With all my love 💝",
+        message_line1:
+          "Chal last me kuch maafi bhi maang leti hu. But i truely wanted u to keep happy bas situations ne kayi chize kharab kardi and mai sirf situations ko dosh nhi dungi , meri bhi galti rahi hai and ha teri bhi😒 SUAR",
+        message_line2:
+          "Share another special thought or memory that will make them smile...",
+        footer_text: "With L and best L. Baaki tu khud samajh ja 😗Smart hai",
+        minimal_heading: "Beautiful Moments",
+        minimal_subtext: "Captured in time, cherished forever",
+        minimal_message:
+          "Tere saath bitaya hua har pal kabhi regretful nhi raha babby, meri har khushi tujhe he pehle sunai hai, bhale he dukh jyada nhi baate. teri jaisi he hu . pagalo ki tarah ye soch leti hu ki tu udas hojayega toh nhi bata paati hu. Baaki i truely cared for u. Ab aur kuch nhi kaha jaata yr. I'm really sorry for making your day bad. shd mai sachme bohot  uri hu yr. I hope you can forgive me and we can move forward with happy memories. Happy Birthday Babby! I wish you all the happiness in the world. love you so much and i hope you have the best birthday ever! 💖",
+        primary_color: "#c41e3a",
+        background_color: "#f5e6d3",
+        text_color: "#2c2c2c",
+        accent_color: "#e8d5c4",
+        secondary_color: "#d4c4b0",
+      };
+
+      async function onConfigChange(config) {
+        document.getElementById("greetingText").textContent =
+          config.greeting_text || defaultConfig.greeting_text;
+        document.getElementById("handwrittenMessage").textContent =
+          config.handwritten_message || defaultConfig.handwritten_message;
+        document.getElementById("scrapbookTitle").textContent =
+          config.scrapbook_title || defaultConfig.scrapbook_title;
+        document.getElementById("romanticQuote").textContent =
+          config.romantic_quote || defaultConfig.romantic_quote;
+        document.getElementById("songTitle").textContent =
+          config.song_title || defaultConfig.song_title;
+        document.getElementById("heartfeltNote").textContent =
+          config.heartfelt_note || defaultConfig.heartfelt_note;
+        document.getElementById("noteSignature").textContent =
+          config.note_signature || defaultConfig.note_signature;
+        document.getElementById("messageLine1").textContent =
+          config.message_line1 || defaultConfig.message_line1;
+        document.getElementById("messageLine2").textContent =
+          config.message_line2 || defaultConfig.message_line2;
+        document.getElementById("footerText").textContent =
+          config.footer_text || defaultConfig.footer_text;
+        document.getElementById("minimalHeading").textContent =
+          config.minimal_heading || defaultConfig.minimal_heading;
+        document.getElementById("minimalSubtext").textContent =
+          config.minimal_subtext || defaultConfig.minimal_subtext;
+        document.getElementById("minimalMessage").textContent =
+          config.minimal_message || defaultConfig.minimal_message;
+
+        const recipientName =
+          config.recipient_name || defaultConfig.recipient_name;
+        document.title = `Happy Birthday Babby ${recipientName}!`;
+      }
+
+      let audioPlayer = null;
+      let isPlaying = false;
+      const pickedImageUrls = new Map();
+
+      function handleCardImagePick(event, imageId) {
+        const file = event.target.files && event.target.files[0];
+        if (!file) return;
+
+        if (!file.type || !file.type.startsWith("image/")) {
+          alert("Please select a valid image file.");
+          event.target.value = "";
+          return;
+        }
+
+        const imageElement = document.getElementById(imageId);
+        if (!imageElement) {
+          event.target.value = "";
+          return;
+        }
+
+        const previousUrl = pickedImageUrls.get(imageId);
+        if (previousUrl) {
+          URL.revokeObjectURL(previousUrl);
+        }
+
+        const imageUrl = URL.createObjectURL(file);
+        imageElement.onerror = function () {
+          alert("Error loading this image. Please pick another file.");
+          URL.revokeObjectURL(imageUrl);
+          pickedImageUrls.delete(imageId);
+        };
+        imageElement.src = imageUrl;
+        pickedImageUrls.set(imageId, imageUrl);
+
+        event.target.value = "";
+      }
+
+      function handleMusicUpload(event) {
+        const file = event.target.files[0];
+        if (file) {
+          audioPlayer = document.getElementById("audioPlayer");
+          const url = URL.createObjectURL(file);
+          audioPlayer.src = url;
+
+          // Update song title with file name (remove extension)
+          const fileName = file.name.replace(/\.[^/.]+$/, "");
+          document.getElementById("songTitle").textContent = fileName;
+
+          // Set up audio event listeners
+          audioPlayer.addEventListener("loadedmetadata", updateDuration);
+          audioPlayer.addEventListener("timeupdate", updateProgress);
+          audioPlayer.addEventListener("ended", onAudioEnded);
+
+          // Auto play after loading
+          audioPlayer.play();
+          isPlaying = true;
+          document.getElementById("playPauseBtn").textContent = "⏸";
+        }
+      }
+
+      function togglePlay() {
+        if (!audioPlayer || !audioPlayer.src) {
+          alert("Please upload a music file first by clicking the 🎵 icon!");
+          return;
+        }
+
+        const playBtn = document.getElementById("playPauseBtn");
+        if (isPlaying) {
+          audioPlayer.pause();
+          playBtn.textContent = "▶";
+          isPlaying = false;
+        } else {
+          audioPlayer.play();
+          playBtn.textContent = "⏸";
+          isPlaying = true;
+        }
+      }
+
+      function skipForward() {
+        if (audioPlayer && audioPlayer.src) {
+          audioPlayer.currentTime = Math.min(
+            audioPlayer.currentTime + 10,
+            audioPlayer.duration,
+          );
+        }
+      }
+
+      function skipBackward() {
+        if (audioPlayer && audioPlayer.src) {
+          audioPlayer.currentTime = Math.max(audioPlayer.currentTime - 10, 0);
+        }
+      }
+
+      function seekAudio(event) {
+        if (!audioPlayer || !audioPlayer.src) return;
+
+        const progressBar = document.getElementById("progressBar");
+        const rect = progressBar.getBoundingClientRect();
+        const percent = (event.clientX - rect.left) / rect.width;
+        audioPlayer.currentTime = percent * audioPlayer.duration;
+      }
+
+      function updateProgress() {
+        if (!audioPlayer) return;
+
+        const percent = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+        document.getElementById("progressFill").style.width = percent + "%";
+        document.getElementById("currentTime").textContent = formatTime(
+          audioPlayer.currentTime,
+        );
+      }
+
+      function updateDuration() {
+        if (!audioPlayer) return;
+        document.getElementById("duration").textContent = formatTime(
+          audioPlayer.duration,
+        );
+      }
+
+      function formatTime(seconds) {
+        if (isNaN(seconds)) return "0:00";
+        const mins = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return mins + ":" + (secs < 10 ? "0" : "") + secs;
+      }
+
+      function onAudioEnded() {
+        isPlaying = false;
+        document.getElementById("playPauseBtn").textContent = "▶";
+        audioPlayer.currentTime = 0;
+      }
+
+      // Create gentle floating hearts (bottom to top with soft rotation)
+      const maxHearts = 22;
+      function createFloatingHeart() {
+        const heartsContainer = document.getElementById("floatingHearts");
+        if (!heartsContainer) return;
+        if (heartsContainer.childElementCount > maxHearts) return;
+
+        const heart = document.createElement("span");
+        heart.className = "heart";
+        const duration = 8 + Math.random() * 6; // 8-14s
+        const delay = Math.random() * 2; // slight stagger
+        const drift = (Math.random() * 80 - 40).toFixed(1) + "px";
+        const scale = (0.6 + Math.random() * 0.9).toFixed(2);
+
+        heart.style.left = Math.random() * 100 + "%";
+        heart.style.setProperty("--drift", drift);
+        heart.style.setProperty("--scale", scale);
+        heart.style.animationDuration = duration + "s";
+        heart.style.animationDelay = delay + "s";
+
+        heartsContainer.appendChild(heart);
+        setTimeout(() => heart.remove(), (duration + delay) * 1000 + 500);
+      }
+
+      // Create hearts periodically
+      setInterval(() => {
+        createFloatingHeart();
+      }, 1200);
+
+      if (window.elementSdk) {
+        window.elementSdk.init({
+          defaultConfig,
+          onConfigChange,
+          mapToCapabilities: (config) => ({
+            recolorables: [
+              {
+                get: () => config.primary_color || defaultConfig.primary_color,
+                set: (value) => {
+                  config.primary_color = value;
+                  window.elementSdk.setConfig({ primary_color: value });
+                },
+              },
+              {
+                get: () =>
+                  config.background_color || defaultConfig.background_color,
+                set: (value) => {
+                  config.background_color = value;
+                  window.elementSdk.setConfig({ background_color: value });
+                },
+              },
+              {
+                get: () => config.text_color || defaultConfig.text_color,
+                set: (value) => {
+                  config.text_color = value;
+                  window.elementSdk.setConfig({ text_color: value });
+                },
+              },
+              {
+                get: () => config.accent_color || defaultConfig.accent_color,
+                set: (value) => {
+                  config.accent_color = value;
+                  window.elementSdk.setConfig({ accent_color: value });
+                },
+              },
+              {
+                get: () =>
+                  config.secondary_color || defaultConfig.secondary_color,
+                set: (value) => {
+                  config.secondary_color = value;
+                  window.elementSdk.setConfig({ secondary_color: value });
+                },
+              },
+            ],
+            borderables: [],
+            fontEditable: undefined,
+            fontSizeable: undefined,
+          }),
+          mapToEditPanelValues: (config) =>
+            new Map([
+              [
+                "recipient_name",
+                config.recipient_name || defaultConfig.recipient_name,
+              ],
+              [
+                "greeting_text",
+                config.greeting_text || defaultConfig.greeting_text,
+              ],
+              [
+                "handwritten_message",
+                config.handwritten_message || defaultConfig.handwritten_message,
+              ],
+              [
+                "scrapbook_title",
+                config.scrapbook_title || defaultConfig.scrapbook_title,
+              ],
+              [
+                "romantic_quote",
+                config.romantic_quote || defaultConfig.romantic_quote,
+              ],
+              ["song_title", config.song_title || defaultConfig.song_title],
+              [
+                "heartfelt_note",
+                config.heartfelt_note || defaultConfig.heartfelt_note,
+              ],
+              [
+                "note_signature",
+                config.note_signature || defaultConfig.note_signature,
+              ],
+              [
+                "message_line1",
+                config.message_line1 || defaultConfig.message_line1,
+              ],
+              [
+                "message_line2",
+                config.message_line2 || defaultConfig.message_line2,
+              ],
+              ["footer_text", config.footer_text || defaultConfig.footer_text],
+              [
+                "minimal_heading",
+                config.minimal_heading || defaultConfig.minimal_heading,
+              ],
+              [
+                "minimal_subtext",
+                config.minimal_subtext || defaultConfig.minimal_subtext,
+              ],
+              [
+                "minimal_message",
+                config.minimal_message || defaultConfig.minimal_message,
+              ],
+            ]),
+        });
+      }
+
+      onConfigChange(defaultConfig);
+    </script>
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'9ab5c0a980633e1c',t:'MTc2NTI5NjQxNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>
